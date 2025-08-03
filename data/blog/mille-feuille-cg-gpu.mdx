@@ -125,7 +125,7 @@ def assign_precision(tile_importance, convergence_rate):
 
 传统的CG实现需要多个kernel调用：
 
-```cuda
+```cpp
 // 传统方法：多个kernel
 spmv_kernel<<<blocks, threads>>>(A, p, Ap);
 dot_product_kernel<<<blocks, threads>>>(r, r, &dot_r);
@@ -134,7 +134,7 @@ axpy_kernel<<<blocks, threads>>>(x, alpha, p, x_new);
 
 Mille-feuille将所有操作融合到一个kernel中：
 
-```cuda
+```cpp
 // Mille-feuille：Single-Kernel
 __global__ void mille_feuille_cg_kernel(
     const Matrix A, Vector x, Vector b, 
