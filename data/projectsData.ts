@@ -7,20 +7,16 @@ interface Project {
 
 const projectsData: Project[] = [
   {
-    title: 'A Search Engine',
-    description: `What if you could look up any information in the world? Webpages, images, videos
-    and more. Google has many features to help you find exactly what you're looking
-    for.`,
-    imgSrc: '/static/images/google.png',
-    href: 'https://www.google.com',
+    title: 'RustSim',
+    description: `RustSim是一个用Rust编写的现代、高性能SPICE电路仿真器。它提供准确高效的电子电路仿真，专注于类型安全、内存效率和计算性能。`,
+    imgSrc: '/static/images/rustsim.png',
+    href: 'https://github.com/ICMHG/RustSim',
   },
   {
-    title: 'The Time Machine',
-    description: `Imagine being able to travel back in time or to the future. Simple turn the knob
-    to the desired date and press "Go". No more worrying about lost keys or
-    forgotten headphones with this simple yet affordable solution.`,
-    imgSrc: '/static/images/time-machine.jpg',
-    href: '/blog/the-time-machine',
+    title: 'FlowMind',
+    description: `FlowMind 是一个面向开发者/研究者的智能工作助手应用，旨在整合分散的工作流程，通过AI技术提升工作效率。它将GitHub项目、Zotero论文、思源笔记、腾讯会议等工具整合到一个统一的平台中。`,
+    imgSrc: '/static/images/flowmind.png',
+    href: 'https://github.com/PomeoOps/FlowMind',
   },
 ]
 
